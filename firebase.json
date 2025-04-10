@@ -1,0 +1,36 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "fraud-eye-6",
+          "appId": "1:420156631478:android:45316fb2c8d96d07bf3917",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "fraud-eye-6",
+          "configurations": {
+            "android": "1:420156631478:android:45316fb2c8d96d07bf3917",
+            "web": "1:420156631478:web:b6d21b314c66214cbf3917"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
